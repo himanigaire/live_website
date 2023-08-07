@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio of weekly assignment.</title>
+    <link rel="icon" href="Logo.png">
+    <style>
+        .body{
+
+          background-image: linear-gradient(to bottom right, rgb(43, 154, 223), rgb(22, 224, 177), rgb(28, 3, 3));
+          background-repeat: no-repeat;
+          background-blend-mode: soft-light;
+          height: 785px;
+          z-index: 100;
+          overflow-x: hidden;
+        }
+        .container{
+            text-align: left;
+            color: antiquewhite;
+        }
+        #myBtn {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed/sticky position */
+            bottom: 50px; /* Place the button at the bottom of the page */
+            right: 30px; /* Place the button 30px from the right */
+            z-index: 99; /* Make sure it does not overlap */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: rgb(162, 68, 68); /* Set a background color */
+            color: white; /* Text color */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 10px; /* Rounded corners */
+            font-size: 10px; /* Increase font size */
+        }
+        #myBtn:hover {
+            background-color: #555; /* Add a dark-grey background on hover */
+        }
+        .loader {
+            position: relative;
+            bottom: 0vh;
+            left: 0vh;
+            width: 100%;
+            height: 40px;
+            background: #1a1a1f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.5s;
+            color: #fff;
+            overflow: hidden;
+        }
+        
+        .loader:hover {
+            background: #03e9f4;
+            color: #050801;
+            box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+        
+        
+        }
+        
+        .loader span {
+        
+            position: absolute;
+            display: block;
+        }
+        
+        .loader span:nth-child(1) {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, transparent, #03e9f4);
+            animation: animate1 2s linear infinite;
+            animation-delay: 0s;
+        }
+        
+        @keyframes animate1 {
+            0% {
+                left: -100%;
+            }
+        
+            50%,
+            100% {
+                left: 100%;
+            }
+        }
+        
+        
+        .loader span:nth-child(3) {
+            bottom: 0;
+            right: -100%;
+        
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(270deg, transparent, #03e9f4);
+            animation: animate3 2s linear infinite;
+            animation-delay: 1s;
+        }
+        
+        @keyframes animate3 {
+            0% {
+                right: -100%;
+            }
+        
+            50%,
+            100% {
+                right: 100%;
+            }
+        }
+        
+        .loader span:nth-child(2) {
+            top: -100%;
+            right: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, #03e9f4);
+            animation: animate2 2s linear infinite;
+            animation-delay: 0.5s;
+        }
+        
+        @keyframes animate2 {
+            0% {
+                top: -100%;
+            }
+        
+            50%,
+            100% {
+                top: 100%;
+            }
+        }
+        
+        .loader span:nth-child(4) {
+        
+            bottom: -100%;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, #03e9f4);
+            animation: animate4 2s linear infinite;
+            animation-delay: 1.5s;
+        }
+        
+        @keyframes animate4 {
+            0% {
+                bottom: -100%;
+            }
+        
+            50%,
+            100% {
+                bottom: 100%;
+            }
+        }
+        
+        .loader h3 {
+        
+            font-family: SF Pro Text;
+            font-size: 12px;
+            color: #03e9f4;
+            letter-spacing: 0.5px;
+        
+        }
+        
+        .loader:hover h3 {
+            color: #111;
+        
+        
+        }
+        
+    </style>
+</head>
+<body class="body">
+    <div class="container">
+        <ul TYPE="square">
+            <p>WEEK 5</p>
+            <li><a href="week_5/Week 5 LAB Exercise1.html">Exercise 1</a></li>
+            <li><a href="week_5/Week5exercise2.html">Exercise 2</a></li>
+            <li><a href="week_5/exercise 3/exercise3.html" > Exercise3 part 1</a></li>
+            <li><a href="week_5/exercise 3/exercise3page2.html"> Exercise3 part 2</a></li>
+            <p>WEEK 6</p>
+            <li><a href="week_6/exercise1/Week6.html">Exercise 1</a></li>
+            <li><a href="week_6/exercise2/home.html">Exercise 2</a></li>
+            <li><a href="week_6/exercsie 3/week6exercise3.html">Exercise 3</a></li>
+            <p>WEEK 7</p>
+            <li><a href="week_7/week7.html">Exercise 1</a></li>
+            <li><a href="week_7/week7part1.html">Exercise 2</a></li>
+            <p>WEEK 8</p>
+            <li><a href="week_8/index.html">Exercise 1</a></li>
+            <p>WEEK 9</p>
+            <li><a href="week_9/task1.html">Exercise 1</a></li>
+            <li><a href="week_9/task2.html">Exercise 2</a></li>
+            <li><a href="week_9/task3.html">Exercise 3</a></li>  
+            <p>WEEK 10</p>
+            <li><a href="week_10/Q1.html">Exercise 1</a></li>
+            <li><a href="week_10/Q2.html">Exercise 2</a></li>
+            <li><a href="week_10/Q3.html">Exercise 3</a></li>
+            <li><a href="week_10/Q4.html">Exercise 4</a></li>
+            <li><a href="week_10/Q5.html">Exercise 5</a></li>
+            <li><a href="week_10/Q6.html">Exercise 6</a></li>
+            <li><a href="week_10/Q7.html">Exercise 7</a></li>
+            <li><a href="week_10/Q8.html">Exercise 8</a></li>
+            <li><a href="week_10/Q9.html">Exercise 9</a></li>
+            <li><a href="week_10/Q10.html">Exercise 10</a></li>
+            <li><a href="week_10/Q11.html">Exercise 11</a></li>
+        </ul> 
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    </div>
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <h3>Copyright© 2023 Himani Inc. All rights reserved.&nbsp;&nbsp;<a href="https://github.com/himanigaire/itassessement2023" target="_blank">github</a>&nbsp;&nbsp;<a href="/1st_Page/index.html">Go back to homepage.</a></h3>
+    </div>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+
+     // When the user scrolls down 20px from the top of the document, show the button
+     window.onscroll = function() {scrollFunction()};
+
+     function scrollFunction() {
+       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+         mybutton.style.display = "block";
+            } else {
+         mybutton.style.display = "none";
+       }
+     }
+
+     // When the user clicks on the button, scroll to the top of the document
+     function topFunction() {
+       document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+     }
+
+    </script>
+</body>
+</html>
+

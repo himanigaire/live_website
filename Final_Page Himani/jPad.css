@@ -1,0 +1,989 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loader {
+    position: relative;
+    bottom: 0vh;
+    left: 0vh;
+    width: 100%;
+    height: 40px;
+    background: #1a1a1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    color: #fff;
+    overflow: hidden;
+}
+
+.loader:hover {
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 200px #03e9f4;
+
+
+}
+
+.loader span {
+
+    position: absolute;
+    display: block;
+}
+
+.loader span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: animate1 2s linear infinite;
+    animation-delay: 0s;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+
+.loader span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: animate3 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes animate3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.loader span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: animate2 2s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.loader span:nth-child(4) {
+
+    bottom: -100%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1.5s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+.loader h3 {
+
+    font-family: SF Pro Text;
+    font-size: 12px;
+    color: #03e9f4;
+    letter-spacing: 0.5px;
+
+}
+
+.loader:hover h3 {
+    color: #111;
+
+
+}
+
+.navbar {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    height: 1.1cm;
+    justify-content: center;
+    align-items: center;
+    z-index: 6;
+    font-size: 12px;
+    position: sticky;
+    top: 0px;
+    animation-name: animation;
+    animation-duration: 10s;
+    animation-iteration-count: 5;
+
+}
+
+#watchhyper {
+    text-decoration: none;
+    animation-name: animation;
+    animation-duration: 10s;
+    animation-iteration-count: 5;
+    color: #000000;
+    z-index: 8;
+}
+
+a#watchhyper:hover {
+    background-color: black;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+#logo {
+    width: 2%;
+    position: relative;
+    right: 13px;
+    top: 1.5px;
+}
+
+#logo-img {
+    width: 90%;
+}
+
+@keyframes animation {
+    0% {
+        color: black;
+    }
+
+    25% {
+        color: red;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    75% {
+        color: green;
+    }
+
+    100% {
+        color: #000000;
+    }
+}
+
+#Store {
+
+
+    padding: 13px 20px;
+    cursor: pointer;
+    font-family: SF Pro Text, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#Store:hover {
+    background-color: black;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+#Mac {
+
+    padding: 13px 20px;
+    cursor: pointer;
+    font-family: SF Pro Text;
+}
+
+#jpadhyper {
+    text-decoration: none;
+    color: #000000;
+
+}
+
+#jpadhyper:hover {
+
+    color: #ffffff;
+}
+
+#Mac:hover {
+    background-color: black;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+#jPad {
+    background-color: rgba(245, 202, 146, 0.8);
+    padding: 13px 20px;
+    cursor: pointer;
+    font-family: SF Pro Text;
+    background-color: rgb(255, 255, 255);
+    transition: 2s;
+    border-radius: 10px;
+    transform: rotateY(360deg);
+
+
+
+
+}
+
+#jPad:hover,
+#jPad:link,
+#jPad:visited,
+#jPad:active {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 10px;
+
+
+}
+
+#jPhone {
+    padding: 13px 20px;
+    cursor: pointer;
+    font-family: SF Pro Text;
+}
+
+#jPhone:hover {
+    background-color: black;
+    color: #ffffff;
+    border-radius: 10px;
+
+}
+
+#Watch {
+    padding: 13px 20px;
+    cursor: pointer;
+    font-family: SF Pro Text;
+    color: #000000;
+    z-index: 9;
+}
+
+#Watch:hover {
+    background-color: black;
+    color: #ffffff;
+    border-radius: 10px;
+    z-index: 6;
+}
+
+#Airpods {
+    padding: 13px 20px;
+    cursor: pointer;
+    font-family: SF Pro Text;
+}
+
+#Airpods:hover {
+    background-color: black;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+#TV {
+    padding: 13px 20px;
+    cursor: pointer;
+    font-family: SF Pro Text;
+}
+
+#TV:hover {
+    background-color: black;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+#Entertainment {
+    padding: 13px 20px;
+    cursor: pointer;
+    font-family: SF Pro Text;
+}
+
+#Entertainment:hover {
+    background-color: black;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+#Accessories {
+    padding: 13px 20px;
+    cursor: pointer;
+    font-family: SF Pro Text;
+}
+
+#Accessories:hover {
+    background-color: black;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+#Contactus {
+    padding: 13px 20px;
+    cursor: pointer;
+    font-family: SF Pro Text;
+}
+
+#Contactus:hover,
+#Contactus:active {
+    background-color: black;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+#search {
+    position: relative;
+    left: 14px;
+    opacity: 0.8;
+}
+
+#search:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+#purchase {
+    position: relative;
+    left: 50px;
+    bottom: 1.1px;
+    opacity: 0.8;
+}
+
+#purchase:hover {
+    cursor: pointer;
+    opacity: 1;
+
+}
+
+/* ---------ICON---------- */
+
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 0 0;
+    position: relative;
+    right: 5px;
+
+    background-color: rgb(255, 255, 255);
+}
+
+.item {
+    margin: 0 26px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+
+}
+
+.item:hover {
+    opacity: 1;
+}
+
+#jpadmini {
+    position: relative;
+    right: 7px;
+}
+
+#jpad {
+    position: relative;
+    left: 2px;
+
+}
+
+
+#keyboardimg {
+    position: relative;
+    left: 7px;
+}
+
+#accessimg {
+    position: relative;
+    left: 1px;
+}
+
+#osimg {
+    position: relative;
+    left: 5px;
+    top: 2px;
+}
+
+#shopimg {
+    position: relative;
+    right: 6px;
+}
+
+/* ----------TEXT---------- */
+
+.icon-name {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 0 0;
+    font-family: SF Pro text;
+    position: relative;
+    right: 5px;
+    bottom: 10px;
+
+
+    background-color: #ffffff;
+}
+
+.name {
+    font-size: 11px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    margin: 0 22.5px;
+    justify-content: center;
+    align-items: center;
+}
+
+a.iconhyperlink {
+    text-decoration: none;
+    color: #000000;
+}
+
+a.iconhyperlink:hover {
+    color: blue;
+}
+
+#jpadtxt {
+    position: relative;
+    left: 9px;
+    top: 7px;
+}
+
+#minitxt {
+    position: relative;
+    left: 14px;
+}
+
+#comparetxt {
+    position: relative;
+    left: 14px;
+}
+
+#keytxt {
+    position: relative;
+    top: 7px;
+    left: 7px;
+}
+
+#pentxt {
+    position: relative;
+    left: 7px;
+}
+
+#jpadprotxt {
+    position: relative;
+    top: 7px;
+    right: 10px;
+}
+
+#accesstxt {
+    position: relative;
+    right: 2px;
+}
+
+#ostxt {
+    position: relative;
+    right: 6px
+}
+
+#shoptxt {
+    position: relative;
+    left: 1px;
+}
+
+#airtxt {
+    position: relative;
+    right: 9px;
+}
+
+.new {
+    color: rgb(193, 8, 8);
+    text-align: center;
+    margin: -2px 0 0 0;
+    font-family: SF Pro Text;
+    font-weight: 100;
+    font-size: 10px;
+    position: sticky;
+    top: 0px;
+    background-color: s;
+
+}
+
+@keyframes offerbar {
+    0% {
+        background-color: rgb(0, 0, 0);
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: rgb(1, 74, 29);
+        left: 0px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: rgb(21, 21, 158);
+        left: 0px;
+        top: 0px;
+    }
+
+    75% {
+        background-color: rgb(76, 86, 86);
+        left: 0px;
+        top: 0px;
+    }
+
+    100% {
+        background-color: rgb(27, 1, 1);
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.offer {
+
+    margin: 15px 0 0 0;
+    padding: 17px 0 0 0;
+    background-color: #000000;
+    color: #ffffff;
+    height: 8vh;
+    font-family: SF Pro text;
+    font-weight: 100;
+    font-size: 12px;
+    text-align: center;
+    animation-name: offerbar;
+    animation-duration: 6s;
+    animation-iteration-count: 5;
+
+
+}
+
+
+
+.learn {
+    margin: 3px 0 0 0;
+    font-size: 12px;
+    font-family: SF Pro text;
+    font-weight: 100;
+
+}
+
+@keyframes learn {
+    0% {
+        color: rgb(64, 64, 237);
+    }
+
+    25% {
+        color: rgb(225, 230, 230);
+    }
+
+    50% {
+        color: bisque;
+    }
+
+    75% {
+        color: azure;
+    }
+
+    100% {
+        color: rgb(55, 61, 230);
+    }
+}
+
+#learnlink {
+    text-decoration: none;
+    color: rgb(46, 102, 244);
+    animation-duration: 6s;
+    animation-name: learn;
+    animation-iteration-count: 5;
+}
+
+.allmaintxt {
+    width: 40%;
+    float: right;
+    position: relative;
+    right: 160px;
+    top: 35vh;
+    text-align: center;
+}
+
+#newtxt {
+    color: red;
+    ;
+}
+
+.Bigfont {
+    font-size: 51px;
+    font-family: SF Pro Display;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.small {
+    font-size: 28px;
+    font-family: SF Pro text;
+}
+
+.small-font {
+    font-size: 28px;
+    font-family: SF Pro text;
+}
+
+#from {
+    font-size: 18px;
+    position: relative;
+    top: 15px;
+}
+
+.jpadimg {
+    width: 100%;
+}
+
+.jpadimg:hover {
+    cursor: pointer;
+
+}
+
+#jpadd {
+    width: 65%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    bottom: 2vh;
+    right: 20px;
+    opacity: 0.8;
+    transition: 2s;
+
+}
+
+#jpadd:hover {
+    opacity: 1;
+}
+
+
+#buybtn {
+    width: 20%;
+    padding: 5px 17px;
+    position: relative;
+    top: 35px;
+    background-color: rgb(66, 84, 245);
+    color: #ffffff;
+    border-radius: 20px;
+    z-index: 5;
+
+}
+
+#buybtn:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.learn {
+    z-index: 4;
+}
+
+a.learnjpad {
+    font-size: 19px;
+    text-decoration: none;
+    position: relative;
+    top: 50px;
+    color: rgb(0, 0, 0);
+    z-index: 3;
+}
+
+a.learnjpad:hover {
+    color: rgb(48, 192, 225);
+    cursor: pointer;
+
+}
+
+/* -------IMAGES-------- */
+
+.images {
+
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    top: 80px;
+
+}
+
+#img1 {
+    width: 36%;
+    position: relative;
+    left: 30px;
+    opacity: 0.9;
+    transition: .5s ease;
+}
+
+#img1:hover {
+    opacity: 1;
+    width: 36.5%;
+}
+
+#img2 {
+    width: 110%;
+    position: relative;
+    left: -230px;
+    opacity: 0.9;
+    transition: .5s ease;
+
+}
+
+#img2:hover {
+    width: 110.5%;
+    opacity: 1;
+}
+
+#img3 {
+    width: 115%;
+    position: relative;
+    top: -18px;
+    left: -130px;
+    opacity: 0.9;
+    transition: .5s ease;
+}
+
+#img3:hover {
+    width: 115.5%;
+    opacity: 1;
+}
+
+#img4 {
+    width: 90%;
+    position: relative;
+    top: 0px;
+    left: -50px;
+    opacity: 0.9;
+    transition: .5s ease;
+}
+
+#img4:hover {
+    width: 90.5%;
+    opacity: 1;
+
+}
+
+#img5 {
+    width: 110%;
+    position: relative;
+    top: 0px;
+    right: 45px;
+    opacity: 0.9;
+    transition: .5s ease;
+
+}
+
+#img5:hover {
+    width: 110.5%;
+    opacity: 1;
+}
+
+.bigimage {
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    top: 30px;
+}
+
+
+#img6 {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    opacity: 0.9;
+    transition: .5s ease;
+}
+
+#img6:hover {
+    opacity: 1;
+    width: 70.5%;
+
+}
+
+.name2 {
+
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+    animation-name: animationjpad;
+    animation-duration: 10s;
+    animation-iteration-count: 5;
+
+
+}
+
+#i1 {
+    position: relative;
+    left: -30px;
+
+}
+
+#i1:hover {
+    cursor: pointer;
+    color: darkgreen;
+
+}
+
+
+
+#i2:hover {
+    cursor: pointer;
+    color: darkgreen;
+}
+
+
+#i3 {
+    position: relative;
+    left: 45px;
+
+}
+
+#i3:hover {
+    cursor: pointer;
+    color: darkgreen;
+}
+
+#i4 {
+    position: relative;
+    left: 70px;
+
+}
+
+#i4.hover {
+    cursor: pointer;
+    color: darkgreen;
+}
+
+#i5 {
+    position: relative;
+    left: 50px;
+}
+
+#i5:hover {
+    cursor: pointer;
+    color: darkgreen;
+}
+
+@keyframes animationjpad {
+    0% {
+        color: black;
+    }
+
+    25% {
+        color: rgb(17, 211, 237);
+    }
+
+    50% {
+        color: blue;
+    }
+
+    75% {
+        color: green;
+    }
+
+    100% {
+        color: #000000;
+    }
+}
+
+.bigname {
+    font-size: 25px;
+    font-family: SF Pro Display;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -35px;
+}
+
+#i6 {
+    
+    color: #03e9f4;
+
+}
+#i6:hover{
+    cursor: pointer;
+    color: #1a1a1f;
+    z-index: 10;
+}
+
+@keyframes animation2 {
+    0% {
+        color: #000000;
+    }
+
+    50%,
+    75% {
+        color: aqua;
+    }
+
+    100% {
+        color: #032709;
+    }
+}
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 50px; 
+    right: 30px;  
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: rgb(162, 68, 68); 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 10px; 
+}
+#myBtn:hover {
+    background-color: #555; 
+}

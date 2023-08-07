@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch - Himani</title>
+    <link rel="icon" href="/1st_Page/Logo.png">
+
+    <!-- ----------CSS---------- -->
+    <link rel="stylesheet" href="/watch.css">
+
+    <!-- ---------------JS------------- -->
+    <script src="/watch.js"></script>
+</head>
+
+<body>
+    <div class="Menu">
+        <div id="logo"> <a href="1st_Page/login.html"><img id="logo-img" src="logo.png" alt="Apple"></a></div>
+        <div id="Store"><a class="menulink" href="#">Store</a></div>
+        <div id="Mac"><a class="menulink" href="#">Mac</a></div>
+        <div id="jPad"><a class="menulink" href="/jPad.html">jPad</a></div>
+        <div id="jPhone"><a class="menulink" href="#iphone14">jPhone</a></div>
+        <div id="Watch"><a class="menulink" href="#watch">Watch</a></div>
+        <div id="Airpods"><a class="menulink" href="#">Airpods</a></div>
+        <div id="TV"><a class="menulink" href="#">TV & Home</a>
+        </div>
+        <div id="Entertainment"><a class="menulink" href="https://scholar.google.com/">Entertainment</a></div>
+        <div id="Accessories"><a class="menulink" href="#">Accessories</a></div>
+        <div id="contactus"><a class="menulink" href="/1st_Page/contact.html">Contact Us</a></div>
+        <img src="/1st_Page/search.png" alt="" id="search" onclick="searchfunction()">
+        <img src="/1st_Page/Purchase.png" alt="" id="purchase" width="15">
+    </div>
+
+    <div class="secondbar">
+        <img src="watches.png" alt="" class="watches">
+    </div>
+
+    <div class="watchname">
+        <div class="watchtxt1">Apple Watch
+            <div id="textalign"> Ultra</div>
+        </div>
+        <div class="watchtxt1">Apple Watch
+            <div id="textalign">Series 8</div>
+        </div>
+        <div class="watchtxt1">Apple Watch
+            <div id="textalign">SE</div>
+        </div>
+        <div class="watchtxt1">Apple Watch
+            <div id="textalign">Nike</div>
+        </div>
+        <div class="watchtxt1">Apple Watch
+            <div id="textalign">Hermes</div>
+        </div>
+        <div class="watchtxt1">Apple Watch
+            <div id="textalign">Studio</div>
+        </div>
+        <div id="compare" class="watchtxt1">Compare</div>
+        <div id="band" class="watchtxt1">Bands</div>
+        <div class="watchtxt1">AirPods</div>
+        <div id="accessories" class="watchtxt1">Accesssories</div>
+        <div id="fitness" class="watchtxt1">Apple Fitness+</div>
+        <div id="watchos" class="watchtxt1">watchOS</div>
+        <div id="shopwatch" class="watchtxt1">Shop Watch</div>
+
+    </div>
+
+    <div class="offer">
+        <div>
+            Get 3% Daily Cash back with Apple Card. And pay for your new Apple Watch over 24 months, interest-free when
+            you choose to check out with J~Card Monthly Installments.<sup>*</sup>
+            <div class="lrn"><a id="anchor" href="#">Learn more</a>...</div>
+        </div>
+    </div>
+
+    <div class="third">
+        <h1>WATCH</h1>
+        <span id="ultra">ULTRA</span><br>
+        <span id="adventure">Adventure awaits.</span><br>
+        <span id="price">$799</span><br>
+        <span id="btn">Buy</span><br>
+        <span id="learnmore">Learn more ››</span>
+        <span id="watchflim">Watch the flim&ensp;►</span>
+        <span class="triangle-right"></span>
+    </div>
+    <div class="photo2">
+        <img src="/watch2.png" alt="" id="watch2">
+    </div>
+    <div class="photo3">
+        <img id="watch3" src="/watch3.png" alt="">
+    </div>
+    <div class="text3">
+        <h1 class="txt3">WATCH</h1>
+        <span id="series8">SERIES 8</span><br>
+        <span id="healthy">A healthy leap ahead.</span><br>
+        <span id="price1">From $399</span><br>
+        <span id="btn1">Buy</span><br>
+        <span id="learnmore1">Learn more ››</span>
+        <span id="watchflim1">Watch the flim&ensp;►</span>
+        <span class="triangle-right"></span>
+    </div>
+    <div class="photo4">
+        <img id="watch4" src="/watch4.png" alt="">
+    </div>
+    <div class="text4">
+        <h1 class="txt4">WATCH</h1>
+        <span id="se">SE</span><br>
+        <span id="deal">A great deal</span><br>
+        <span id="love">to love.</span><br>
+        <span id="price2">From $249</span><br>
+        <span id="btn2">Buy</span>
+        <span id="learnmore2">Learn more ››</span>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <h3>Copyright© 2023 Himani Inc. All rights reserved.&nbsp;&nbsp;<a href="https://github.com/himanigaire/itassessement2023" target="_blank">github</a></h3>
+    </div>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+
+     // When the user scrolls down 20px from the top of the document, show the button
+     window.onscroll = function() {scrollFunction()};
+
+     function scrollFunction() {
+       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+         mybutton.style.display = "block";
+            } else {
+         mybutton.style.display = "none";
+       }
+     }
+
+     // When the user clicks on the button, scroll to the top of the document
+     function topFunction() {
+       document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+     }
+
+    </script>
+
+</body>
+
+</html>

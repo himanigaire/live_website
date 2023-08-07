@@ -1,0 +1,77 @@
+
+<!--main le body ko kam garxa ani sidebar ko kaam <aside> le garxa-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Himani Gaire">
+    <title>Form-2</title>
+</head>
+<body style="background-color: rgb(238, 196, 141);">
+    <div style="border: 1px solid black; height: 550px; width: 490px;">
+    <form action="post">
+    
+    <table align="left" cellspacing="5px" style="width: 60%; text-align: left;">
+        <tr>
+            <th style="text-align: left; padding-top: 10px;">HTML Form Test <br><br></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th width="30%" style="text-align: left; padding-left: 20px;">Name</th>
+            <td><input type="text" size="25" maxlength="25" name="Name" id="name" ></td>
+        </tr>
+        <tr>
+            <th style="text-align: left; padding-left: 20px;">Address</th>
+            <td><input type="text" size="25" maxlength="25" name="address"></td>
+        </tr>
+        <tr>
+            <th style="text-align: left; padding-left: 20px;">Email</th>
+            <td><input type="text" size="25" maxlength="25" name="email"></td>
+        </tr>
+        <tr>
+            <th style="text-align: left; padding-left: 20px;">Gender</th>
+            <td>
+                <input type="radio" id="male" name="gender" value="male">Male
+                <input type="radio" id="female" name="gender" value="female">Female
+            </td>
+        </tr>
+        <tr>
+            <th style="text-align: left; padding-left: 20px;">Hobbies</th>
+            <td>
+                <input type="checkbox" id="sports" name="hobby" value="sports">Sports
+                <input type="checkbox" id="movies" name="hobby" value="movies">Movies
+                <input type="checkbox" id="travel" name="hobby" value="travel">Travelling
+            </td>
+        </tr>
+        <tr>
+            <th style="text-align: left; padding-left: 20px;">Country</th>
+            <td>
+                <select style="padding-right: 120px; text-align: center;" name="country"  >
+                    <option  value="A0">Nepal</option>
+                    <option value="A1">India</option>
+                    <option value="A2">China</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th style="text-align: left; padding-left: 20px;">Message</th>
+            <td>
+                <textarea name="message"  cols="40" rows="12"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2" style="text-align: center; padding-right: 140px;">
+                <input type="submit" name="submit" value="Submit" >
+                <input type="reset" name="reset" value="Reset">
+
+            </th>
+        </tr>
+        
+                
+
+    </table>
+
+    
+</form>
+</div>
+</html>

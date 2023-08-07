@@ -1,0 +1,313 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/1st_Page/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.blast{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blast.active{
+    display: none;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 50px 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+
+}
+#divlogo{
+    width: 30%;
+}
+#imglogo{
+    width: 12%;
+    position: relative;
+    left: -50px;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+.navigation a::after{
+    
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+  
+}
+#loginlink{
+    text-align: center;
+    position: relative;
+    right: 19px;
+}
+
+#contact{
+    border: 2px solid;
+    padding: 11px;
+    border-radius: 5px 10px;
+    color: black;
+    background-color: #fff;
+    box-shadow: 0 0 60px rgb(255, 21, 0);
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup{
+    width: 130px;
+    height: 40px;
+    background: transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+    
+}
+.navigation .btnLogin-popup:hover{
+    background-color: #fff;
+    color: black;
+    
+    
+}
+
+
+
+.form{
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255,.5);
+    border-radius: 10px 25px 0 25px;
+    backdrop-filter:blur(20px);
+    box-shadow: 0 0 30px rgba(0 , 0, 0, .5);
+    position: relative;
+    top: 20px;
+    overflow: hidden;
+    
+
+    
+}
+
+.blast .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #c3c3c3;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 23px 0 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.blast .icon-close:hover{
+    color: #fff;
+    background: transparent;
+}
+
+.form h3{
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-family: SF Pro Display;
+    text-align: center;
+    font-size: 30px;
+}
+.form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    border-radius: 5px;
+    background: rgb(231, 231, 231);
+    font-size: 16px;
+
+}
+.form button{
+    padding: 15px;
+    background: rgb(123, 53, 25);
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
+.form button a{
+    color: white;
+    text-decoration: none;
+}
+
+.form button a:hover{
+    color: #050801;
+}
+
+.loader{
+    position: relative;
+    bottom: 0vh;
+    left: 0vh;
+    width: 100%;
+    height: 40px;
+    background: #1a1a1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    color: #fff;
+    overflow: hidden;
+}
+.loader:hover{
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+
+
+}
+
+.loader span{
+
+    position: absolute;
+    display: block;
+}
+.loader span:nth-child(1){
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 2s linear infinite;
+    animation-delay: 0s;
+}
+@keyframes animate1
+{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    } 
+}
+
+
+.loader span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+
+    width: 100%; 
+    height: 5px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate3
+{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    } 
+}
+.loader span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 2s linear infinite;
+    animation-delay: 0.5s;
+}
+@keyframes animate2
+{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    } 
+}
+.loader span:nth-child(4){
+ 
+    bottom: -100%;
+    left: 0;
+    width:5px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1.5s;
+}
+@keyframes animate4
+{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    } 
+}
+
+.loader h3{
+
+    font-family: SF Pro Text;
+    font-size: 12px;
+    color: #03e9f4;   
+    letter-spacing: 0.5px;
+    
+}
+.loader:hover h3{
+    color: #111;
+    
+
+}

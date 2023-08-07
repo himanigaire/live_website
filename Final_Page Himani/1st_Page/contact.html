@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Himani</title>
+    <link rel="icon" href="/Logo.png">
+    <!-- ----------CSS---------- -->
+    <link rel="stylesheet" href="/1st_Page/contact.css">
+    <!-- -----------JS------------ -->
+    <script src="/1st_Page/contact.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div id="divlogo">
+            <img id="imglogo" src="/1st_Page/Logo.png" alt="logo">
+        </div>
+        <nav class="navigation">
+            <a href="/1st_Page/index.html">Home</a>
+            <a href="#">About </a>
+            <a href="#">Services</a>
+            <a id="contact" href="#">Contact</a>
+            <button class="btnLogin-popup"><a id="loginlink" href="/1st_Page/login.html">Login</a> </button>
+        </nav>
+    </header>
+
+    <div class="main">
+
+        <div class="blast" id="blast">
+            <form class="form" id="form">
+                <span class="icon-close">
+                    <ion-icon name="close"></ion-icon>
+                </span>
+                <h3>Get in Touch</h3>
+                <input type="text" id="name" placeholder="Your name" required>
+                <input type="email" id="email" placeholder="Email id" required>
+                <input type="text" id="number" placeholder="Phone no." required>
+                <textarea id="message" cols="30" rows="10" placeholder="How can we help you?"></textarea>
+                <button type="submit" id="submit" onclick="searchfunction()"  > <a href="mailto:hi.gaire3@gmail.com">Send</a> </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <h3>Copyright© 2023 Himani Inc. All rights reserved.&nbsp;&nbsp;<a href="https://github.com/himanigaire/itassessement2023" target="_blank">github</a></h3>
+    </div>
+
+</body>
+
+</html>
